@@ -6,35 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A sample website hosted on Google App Engine">
   <title>GAE Sample Site</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/global.css">
+  <!-- <link rel="icon" href="favicon.ico"> -->
+  <!-- <link rel="stylesheet" href="css/global.css"> -->
 </head>
 
 <body>
   <header>
-    <a href="/"><img src="images/logo.png" alt="Logo"></a>
+    <!-- <a href="/"><img src="images/logo.png" alt="Logo"></a> -->
     <h1>GAE Sample Site</h1>
   </header>
-  <nav>
+  <!-- <nav>
     <a href="index.html" id="current">Home</a>
     <a href="downloads.html">Downloads</a>
     <a href="faq.html">FAQ</a>
     <a href="feedback.html">Feedback</a>
-  </nav>
+  </nav> -->
+
+  <script>
+    function stock()
+    {
+      const btn = document.getElementById('stock_id');
+      btn.style.color="red";
+      //<?php
+      //  $output = shell_exec( "ls" );
+      //  var_dump($output);
+      //?>
+      //var shell = WScript.CreateObject("WScript.Shell");
+      //shell.Run("ls");
+      //exec("java -jar test.jar");
+      //var exec = require('child_process').exec;
+      //const execSync = require('child_process').execSync;
+      //const output = execSync('ls', {encoding: 'utf-8'});
+      //console.log('Output was:\n', output);
+      btn.style.color="green";
+      //exec("ls");
+      //showMessageDialog(null, "Hey");
+      //const color = document.querySelector('.color');
+      //exec("pause");
+      //const name = document.querySelector(".stock_name");
+      //name.style.color = "red";
+      //showMessageDialog(null, "Hey");
+         
+    }
+  </script>
+
   <main>
     <h1>Home</h1>
     <p>Hello everyone and welcome to GAE Sample Site — a sample website hosted on Google App Engine. For more information, see the following tutorial: <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_do_you_host_your_website_on_Google_App_Engine" title="How do you host your website on Google App Engine? - Learn web development | MDN">How do you host your website on Google App Engine?</a>.</p>
     <button>Open</button>
-    <input type="button" title="Stock" name="stock_name" value="stock_value" id="stock_id" onclick="stock()">
-    <script>
-      function stock()
-      {
-        <?php exec("java -jar test.jar", $output);?>
-        <?php echo $output;?>
-      }
-    </script>
+    <input type="button" title="Stock" name="stock_name" value="stock_value" id="stock_id" onclick="stock()">    
   </main>
-  <footer>
+  <!-- <footer>
     <a href="https://plus.google.com/share?url=http%3A%2F%2Fgaesamplesite.appspot.com%2F" target="_blank" title="Share on Google+">
       <img src="images/google+.png" alt="Google+">
     </a>
@@ -45,7 +67,7 @@
       <img src="images/facebook.png" alt="Facebook">
     </a>
     <span><a href="index.html">Home</a> | <a href="#top">Top ▲</a></span>
-  </footer>
+  </footer> -->
 </body>
 
 </html>
